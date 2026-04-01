@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Update Log - NRONCD</title>
+        <style>
+        :root {
+            --bg: #f8fafc;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+            --accent: #0f172a;
+            --border: #e2e8f0;
+            --card: #ffffff;
+            --green: #10b981;
+            --orange: #f59e0b;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        header {
+            margin-bottom: 25px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        header h1 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+            color: var(--accent);
+        }
+
+        header p {
+            font-size: 0.8rem;
+            margin: 3px 0 0;
+            color: var(--text-sub);
+        }
+
+        /* Thẻ Cập Nhật */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .title-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+        }
+
+        .online { background: var(--green); box-shadow: 0 0 8px var(--green); }
+        .pending { background: var(--orange); box-shadow: 0 0 8px var(--orange); }
+
+        .title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .datetime {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-sub);
+            background: #f1f5f9;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .content {
+            font-size: 0.82rem;
+            color: #475569;
+            line-height: 1.5;
+        }
+
+        .content ul {
+            margin: 5px 0 0;
+            padding-left: 15px;
+            list-style-type: "– ";
+        }
+
+        .content li {
+            margin-bottom: 3px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.7rem;
+            color: #94a3b8;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hiệu ứng Hover nhẹ */
+        .card:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <h1>NHẬT KÍ CẬP NHẬT HÀNG NGÀY</h1>
+                <p>NroNCD.Online • Server Status</p>
+            </header>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="title-group">
+                        <div class="status-dot online"></div>
+                        <div class="title">Bảo trì - Sửa lỗi</div>
+                    </div>
+                    <div class="datetime">01/04/2026 12:00</div>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Sửa lỗi chỉ số cũ của găng thiên sứ</li>
+                        <li>Sửa lỗi chiến thần tăng sai chỉ số</li>
+                        <li>Tối ưu hệ thống, mượt mà.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer>
+                &copy; 2026 NRONCD OPERATING SYSTEM
+            </footer>
+        </div>
+
+    </body>
+</html>
